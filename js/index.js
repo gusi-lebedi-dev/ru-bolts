@@ -1,9 +1,7 @@
 const elements = [
     document.querySelector('.products-title'),
     document.querySelector('.products-block'),
-    document.querySelector('.about-us-title'),
-    document.querySelector('.about-us-block-left'),
-    document.querySelector('.about-us-block-right'),
+    document.querySelector('.about-us'),
     document.querySelector('.advantages-title'),
     document.querySelector('.to-buy-title'),
     document.querySelector('.to-buy-content-item-left'),

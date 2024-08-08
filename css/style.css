@@ -607,6 +607,11 @@ h3 {
     opacity: 1;
 }
 
+.about-us {
+    position: relative;
+    min-height: 1100px;
+}
+
 .about-us-title {
     position: relative;
     transition: transform 0.4s linear, opacity 0.4s;
@@ -615,31 +620,35 @@ h3 {
     z-index: -1;
 }
 
-.about-us-title.active {
+.about-us.active .about-us-title {
     transform: translateY(0%);
     opacity: 1;
+
+}
+
+.about-us-block-left img {
+    will-change: transform, opacity;
 }
 
 .to-buy-content-item-left,
 .about-us-block-left {
-    transition: transform 0.4s linear, opacity 0.3s;
+    transition: transform 0.5s;
     transform: translateX(-80%);
-    opacity: 0;
 }
 
 .to-buy-content-item-right,
 .about-us-block-right {
-    transition: transform 0.4s linear, opacity 0.3s;
+    position: relative;
+    transition: transform 0.5s;
     transform: translateX(80%);
-    opacity: 0;
+
 }
 
 .to-buy-content-item-right.active,
 .to-buy-content-item-left.active,
-.about-us-block-right.active,
-.about-us-block-left.active {
+.about-us.active .about-us-block-right,
+.about-us.active .about-us-block-left {
     transform: translateX(0%);
-    opacity: 1;
 }
 
 .contacts-content-item {
@@ -983,11 +992,13 @@ h3 {
 :root {
     --spacing-md: 60px;
 }
+
 @media screen and (max-width: 768px) {
     :root {
         --spacing-md: 20px;
     }
 }
+
 .splide__track {
     margin-bottom: 44px;
 }
@@ -1569,6 +1580,12 @@ table.iksweb td {
 .section-helpful.active h2,
 .section-helpful.active .helpful-content-cards {
     transform: translateY(0);
+}
+
+@media screen and (max-width: 1450px) {
+    .helpful-content-cards {
+        padding: 0 20px;
+    }
 }
 
 @media screen and (max-width: 1076px) {
