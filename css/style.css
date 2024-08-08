@@ -43,6 +43,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    background: #ffffff;
+}
+
 a, a:link, a:visited {
     text-decoration: none;
 }
@@ -1856,19 +1860,20 @@ table.iksweb td {
     [data-animate] .section-use-content,
     [data-animate] .section-temperature-conditions-content,
     [data-animate] .section-temperature-conditions-content .active-bar,
-    [data-animate]  h2,
+    [data-animate] h2,
     [data-animate] .table-button,
     [data-animate] .specifications-grid,
     [data-animate] .table-active-bar,
     [data-animate] .table-lift-button,
-    [data-animate] .helpful-content-cards
-    {
+    [data-animate] .helpful-content-cards {
         transform: translateY(0) scale(1) translateX(0) !important;
         opacity: 1 !important;
     }
+
     .single-product .header {
         transform: translateY(0);
     }
+
     .main-screen h1 {
         transform: translateY(0) scale(1);
     }
