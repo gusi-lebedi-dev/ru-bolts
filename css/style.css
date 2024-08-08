@@ -114,7 +114,28 @@ legend {
 
 .main-screen {
     background: url("../assets/image/mainscreen-bg.jpg") no-repeat center;
+    background-size: cover;
 }
+
+.single-product .main-screen {
+    background: url("../assets/image/single-product-mainscreen.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.section-use {
+    background: url("../assets/image/application-bg.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.section-temperature-conditions {
+    background: url("../assets/image/temperature-conditions-bg.jpg") no-repeat center;
+    background-size: cover;
+}
+.section-lift-specification {
+    background: url("../assets/image/application-bg.jpg") no-repeat center;
+    background-size: cover;
+}
+
 
 .section-lift-specification {
     position: relative;
