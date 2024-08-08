@@ -25,3 +25,4 @@ const openModal = () => {
     }
 }
 
+document.addEventListener('touchstart', openModal);
