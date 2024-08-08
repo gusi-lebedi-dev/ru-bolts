@@ -14,6 +14,8 @@
 <div class="single-product">
     <section class="main-screen">
         <img src="assets/image/single-product-mainscreen.jpg" alt="main-screen-bg">
+        <h1 class="title-mainscreen">Такелажная точка TTBSPP рым-болт
+            с поворотной петлей</h1>
     </section>
     <section class="header">
         <div class="container">
@@ -28,7 +30,7 @@
                     <li><a href="#contacts">Контакты</a></li>
                 </ul>
             </div>
-            <div onclick="openModal()" class="burger-menu">
+            <div onclick="openModalSingle()" class="burger-menu">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -54,7 +56,7 @@
                 а так же для крепления различных изделий и конструкций при проведении такелажных, монтажных и крепежных
                 работ. </p>
         </div>
-        <div class="appointment-splide splide">
+        <div class="appointment-splide splide" id="splide1">
             <div class="splide__track">
                 <ul class="splide__list">
                     <li class="splide__slide">
@@ -80,7 +82,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="container">
+            <div class="control container">
                 <ul class="splide__pagination"></ul>
                 <div class="splide__arrows">
                     <button class="splide__arrow splide__arrow--prev">
@@ -107,18 +109,28 @@
                 натяжением.</p>
         </div>
     </section>
-    <section class="appointment">
+    <section class="section-characteristics appointment">
         <div class="appointment-text container">
-            <h2>назначение</h2>
-            <p>Рым-болты с поворотной петлей предназначены для подъема, перемещения, удержания груза на весу,
-                а так же для крепления различных изделий и конструкций при проведении такелажных, монтажных и крепежных
-                работ. </p>
+            <h2>Технические характеристики</h2>
         </div>
-        <div class="appointment-splide splide">
+        <div class="appointment-splide splide" id="splide2">
             <div class="splide__track">
                 <ul class="splide__list">
                     <li class="splide__slide">
                         <img src="assets/image/single-product-mainscreen.jpg" alt="">
+                        <div class="section-characteristics-item-text">
+                            <ul>
+                                <li>кованая, легированная и закаленная сталь 8 класса</li>
+                                <li>болт класс стали -12.9</li>
+                                <li>индивидуально протестировано нагрузкой превышающей рабочую в 2,5 раза</li>
+                            </ul>
+                            <ul>
+                                <li>испытано на усталость нагрузкой превышающей рабочую в 1,5 раза на 20000 циклов</li>
+                                <li>100%-ая проверка на наличие трещин способом магнитно-порошковой дефектоскопии
+                                    (magnaflux crack detected)
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                     <li class="splide__slide">
                         <img src="assets/image/single-product-mainscreen.jpg" alt="">
@@ -140,7 +152,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="container">
+            <div class="control container">
                 <ul class="splide__pagination"></ul>
                 <div class="splide__arrows">
                     <button class="splide__arrow splide__arrow--prev">
@@ -157,26 +169,945 @@
             </div>
         </div>
     </section>
+    <section class="section-temperature-conditions">
+        <img src="assets/image/temperature-conditions-bg.jpg" alt="temperature-conditions-bg">
+        <div class="section-temperature-conditions-content">
+            <h2>снижение грузоподъемности при различных температурных условиях</h2>
+            <div class="active-bar">
+                <ul>
+                    <li class="active">> 400 °C</li>
+                    <li>350-400 °C</li>
+                    <li>200-350 °C</li>
+                    <li>-45-200 °C</li>
+                    <li>< -45 °C</li>
+                </ul>
+                <p class="hint active">При данной температуре недопустима никакая нагрузка на продукт</p>
+                <p class="hint">1</p>
+                <p class="hint">2</p>
+                <p class="hint">3</p>
+                <p class="hint">4</p>
+            </div>
+        </div>
+    </section>
+    <section class="section-product-specification container">
+        <h2>Спецификация изделий</h2>
+
+        <div class="specifications-grid">
+            <table class="iksweb">
+                <tbody>
+                <tr class="color-green">
+                    <td rowspan="2">Код изделия</td>
+                    <td rowspan="2">Will, тонн</td>
+                    <td colspan="2">Резьба, мм</td>
+                    <td colspan="8">Размеры</td>
+                    <td rowspan="2">
+                        Крутящий момент, Nm
+                    </td>
+                    <td rowspan="2">Вес, кг</td>
+                </tr>
+                <tr class="color-green">
+                    <td>M</td>
+                    <td>E</td>
+                    <td>A</td>
+                    <td>B</td>
+                    <td>D</td>
+                    <td>G</td>
+                    <td>F</td>
+                    <td>H</td>
+                    <td>S</td>
+                    <td>SW</td>
+                </tr>
+                <tr>
+                    <td>TTBPP M8х76</td>
+                    <td>0,3</td>
+                    <td>M8</td>
+                    <td>76</td>
+                    <td>30</td>
+                    <td>35</td>
+                    <td>14</td>
+                    <td>45</td>
+                    <td>86,6</td>
+                    <td>30</td>
+                    <td>6</td>
+                    <td>13</td>
+                    <td>10-15</td>
+                    <td>0,39</td>
+                </tr>
+                <tr>
+                    <td>TTBPP M10*</td>
+                    <td>0,63</td>
+                    <td>M10</td>
+                    <td>15</td>
+                    <td>30</td>
+                    <td>35</td>
+                    <td>14</td>
+                    <td>45</td>
+                    <td>86,6</td>
+                    <td>30</td>
+                    <td>6</td>
+                    <td>13</td>
+                    <td>10-15</td>
+                    <td>0,38</td>
+                </tr>
+                <tr>
+                    <td>TTBPP M10х96</td>
+                    <td>0,63</td>
+                    <td>M10</td>
+                    <td>96</td>
+                    <td>30</td>
+                    <td>35</td>
+                    <td>14</td>
+                    <td>45</td>
+                    <td>86,6</td>
+                    <td>30</td>
+                    <td>6</td>
+                    <td>13</td>
+                    <td>10-15</td>
+                    <td>0,43</td>
+                </tr>
+                <tr>
+                    <td>TTBPP M12*</td>
+                    <td>1,00</td>
+                    <td>M12</td>
+                    <td>17</td>
+                    <td>36</td>
+                    <td>40</td>
+                    <td>18</td>
+                    <td>68</td>
+                    <td>98,7</td>
+                    <td>36</td>
+                    <td>8</td>
+                    <td>19</td>
+                    <td>10-15</td>
+                    <td>0,71</td>
+                </tr>
+                <tr>
+                    <td>TTBPP M12х114</td>
+                    <td>1,00</td>
+                    <td>M12</td>
+                    <td>144</td>
+                    <td>36</td>
+                    <td>40</td>
+                    <td>18</td>
+                    <td>68</td>
+                    <td>98,7</td>
+                    <td>36</td>
+                    <td>8</td>
+                    <td>19</td>
+                    <td>10-15</td>
+                    <td>0,80</td>
+                </tr>
+                <tr>
+                    <td>TTBPP M8х76</td>
+                    <td>0,3</td>
+                    <td>M8</td>
+                    <td>76</td>
+                    <td>30</td>
+                    <td>35</td>
+                    <td>14</td>
+                    <td>45</td>
+                    <td>86,6</td>
+                    <td>30</td>
+                    <td>6</td>
+                    <td>13</td>
+                    <td>10-15</td>
+                    <td>0,39</td>
+                </tr>
+                <tr>
+                    <td>TTBPP M10*</td>
+                    <td>0,63</td>
+                    <td>M10</td>
+                    <td>15</td>
+                    <td>30</td>
+                    <td>35</td>
+                    <td>14</td>
+                    <td>45</td>
+                    <td>86,6</td>
+                    <td>30</td>
+                    <td>6</td>
+                    <td>13</td>
+                    <td>10-15</td>
+                    <td>0,38</td>
+                </tr>
+                <tr>
+                    <td>TTBPP M10х96</td>
+                    <td>0,63</td>
+                    <td>M10</td>
+                    <td>96</td>
+                    <td>30</td>
+                    <td>35</td>
+                    <td>14</td>
+                    <td>45</td>
+                    <td>86,6</td>
+                    <td>30</td>
+                    <td>6</td>
+                    <td>13</td>
+                    <td>10-15</td>
+                    <td>0,43</td>
+                </tr>
+                <tr>
+                    <td>TTBPP M12*</td>
+                    <td>1,00</td>
+                    <td>M12</td>
+                    <td>17</td>
+                    <td>36</td>
+                    <td>40</td>
+                    <td>18</td>
+                    <td>68</td>
+                    <td>98,7</td>
+                    <td>36</td>
+                    <td>8</td>
+                    <td>19</td>
+                    <td>10-15</td>
+                    <td>0,71</td>
+                </tr>
+                <tr>
+                    <td>TTBPP M12х114</td>
+                    <td>1,00</td>
+                    <td>M12</td>
+                    <td>144</td>
+                    <td>36</td>
+                    <td>40</td>
+                    <td>18</td>
+                    <td>68</td>
+                    <td>98,7</td>
+                    <td>36</td>
+                    <td>8</td>
+                    <td>19</td>
+                    <td>10-15</td>
+                    <td>0,80</td>
+                </tr>
+                <tr>
+                    <td>TTBPP M8х76</td>
+                    <td>0,3</td>
+                    <td>M8</td>
+                    <td>76</td>
+                    <td>30</td>
+                    <td>35</td>
+                    <td>14</td>
+                    <td>45</td>
+                    <td>86,6</td>
+                    <td>30</td>
+                    <td>6</td>
+                    <td>13</td>
+                    <td>10-15</td>
+                    <td>0,39</td>
+                </tr>
+                <tr>
+                    <td>TTBPP M10*</td>
+                    <td>0,63</td>
+                    <td>M10</td>
+                    <td>15</td>
+                    <td>30</td>
+                    <td>35</td>
+                    <td>14</td>
+                    <td>45</td>
+                    <td>86,6</td>
+                    <td>30</td>
+                    <td>6</td>
+                    <td>13</td>
+                    <td>10-15</td>
+                    <td>0,38</td>
+                </tr>
+                <tr>
+                    <td>TTBPP M10х96</td>
+                    <td>0,63</td>
+                    <td>M10</td>
+                    <td>96</td>
+                    <td>30</td>
+                    <td>35</td>
+                    <td>14</td>
+                    <td>45</td>
+                    <td>86,6</td>
+                    <td>30</td>
+                    <td>6</td>
+                    <td>13</td>
+                    <td>10-15</td>
+                    <td>0,43</td>
+                </tr>
+                <tr>
+                    <td>TTBPP M12*</td>
+                    <td>1,00</td>
+                    <td>M12</td>
+                    <td>17</td>
+                    <td>36</td>
+                    <td>40</td>
+                    <td>18</td>
+                    <td>68</td>
+                    <td>98,7</td>
+                    <td>36</td>
+                    <td>8</td>
+                    <td>19</td>
+                    <td>10-15</td>
+                    <td>0,71</td>
+                </tr>
+                <tr>
+                    <td>TTBPP M12х114</td>
+                    <td>1,00</td>
+                    <td>M12</td>
+                    <td>144</td>
+                    <td>36</td>
+                    <td>40</td>
+                    <td>18</td>
+                    <td>68</td>
+                    <td>98,7</td>
+                    <td>36</td>
+                    <td>8</td>
+                    <td>19</td>
+                    <td>10-15</td>
+                    <td>0,80</td>
+                </tr>
+                <tr>
+                    <td>TTBPP M8х76</td>
+                    <td>0,3</td>
+                    <td>M8</td>
+                    <td>76</td>
+                    <td>30</td>
+                    <td>35</td>
+                    <td>14</td>
+                    <td>45</td>
+                    <td>86,6</td>
+                    <td>30</td>
+                    <td>6</td>
+                    <td>13</td>
+                    <td>10-15</td>
+                    <td>0,39</td>
+                </tr>
+                <tr>
+                    <td>TTBPP M10*</td>
+                    <td>0,63</td>
+                    <td>M10</td>
+                    <td>15</td>
+                    <td>30</td>
+                    <td>35</td>
+                    <td>14</td>
+                    <td>45</td>
+                    <td>86,6</td>
+                    <td>30</td>
+                    <td>6</td>
+                    <td>13</td>
+                    <td>10-15</td>
+                    <td>0,38</td>
+                </tr>
+                <tr>
+                    <td>TTBPP M10х96</td>
+                    <td>0,63</td>
+                    <td>M10</td>
+                    <td>96</td>
+                    <td>30</td>
+                    <td>35</td>
+                    <td>14</td>
+                    <td>45</td>
+                    <td>86,6</td>
+                    <td>30</td>
+                    <td>6</td>
+                    <td>13</td>
+                    <td>10-15</td>
+                    <td>0,43</td>
+                </tr>
+                <tr>
+                    <td>TTBPP M12*</td>
+                    <td>1,00</td>
+                    <td>M12</td>
+                    <td>17</td>
+                    <td>36</td>
+                    <td>40</td>
+                    <td>18</td>
+                    <td>68</td>
+                    <td>98,7</td>
+                    <td>36</td>
+                    <td>8</td>
+                    <td>19</td>
+                    <td>10-15</td>
+                    <td>0,71</td>
+                </tr>
+                <tr>
+                    <td>TTBPP M12х114</td>
+                    <td>1,00</td>
+                    <td>M12</td>
+                    <td>144</td>
+                    <td>36</td>
+                    <td>40</td>
+                    <td>18</td>
+                    <td>68</td>
+                    <td>98,7</td>
+                    <td>36</td>
+                    <td>8</td>
+                    <td>19</td>
+                    <td>10-15</td>
+                    <td>0,80</td>
+                </tr>
+                <tr>
+                    <td>TTBPP M12х114</td>
+                    <td>1,00</td>
+                    <td>M12</td>
+                    <td>144</td>
+                    <td>36</td>
+                    <td>40</td>
+                    <td>18</td>
+                    <td>68</td>
+                    <td>98,7</td>
+                    <td>36</td>
+                    <td>8</td>
+                    <td>19</td>
+                    <td>10-15</td>
+                    <td>0,80</td>
+                </tr>
+                <tr>
+                    <td>TTBPP M12х114</td>
+                    <td>1,00</td>
+                    <td>M12</td>
+                    <td>144</td>
+                    <td>36</td>
+                    <td>40</td>
+                    <td>18</td>
+                    <td>68</td>
+                    <td>98,7</td>
+                    <td>36</td>
+                    <td>8</td>
+                    <td>19</td>
+                    <td>10-15</td>
+                    <td>0,80</td>
+                </tr>
+                <tr>
+                    <td>TTBPP M12х114</td>
+                    <td>1,00</td>
+                    <td>M12</td>
+                    <td>144</td>
+                    <td>36</td>
+                    <td>40</td>
+                    <td>18</td>
+                    <td>68</td>
+                    <td>98,7</td>
+                    <td>36</td>
+                    <td>8</td>
+                    <td>19</td>
+                    <td>10-15</td>
+                    <td>0,80</td>
+                </tr>
+                <tr>
+                    <td>TTBPP M12х114</td>
+                    <td>1,00</td>
+                    <td>M12</td>
+                    <td>144</td>
+                    <td>36</td>
+                    <td>40</td>
+                    <td>18</td>
+                    <td>68</td>
+                    <td>98,7</td>
+                    <td>36</td>
+                    <td>8</td>
+                    <td>19</td>
+                    <td>10-15</td>
+                    <td>0,80</td>
+                </tr>
+                <tr>
+                    <td>TTBPP M12х114</td>
+                    <td>1,00</td>
+                    <td>M12</td>
+                    <td>144</td>
+                    <td>36</td>
+                    <td>40</td>
+                    <td>18</td>
+                    <td>68</td>
+                    <td>98,7</td>
+                    <td>36</td>
+                    <td>8</td>
+                    <td>19</td>
+                    <td>10-15</td>
+                    <td>0,80</td>
+                </tr>
+                <tr>
+                    <td>TTBPP M12х114</td>
+                    <td>1,00</td>
+                    <td>M12</td>
+                    <td>144</td>
+                    <td>36</td>
+                    <td>40</td>
+                    <td>18</td>
+                    <td>68</td>
+                    <td>98,7</td>
+                    <td>36</td>
+                    <td>8</td>
+                    <td>19</td>
+                    <td>10-15</td>
+                    <td>0,80</td>
+                </tr>
+                <tr>
+                    <td>TTBPP M12х114</td>
+                    <td>1,00</td>
+                    <td>M12</td>
+                    <td>144</td>
+                    <td>36</td>
+                    <td>40</td>
+                    <td>18</td>
+                    <td>68</td>
+                    <td>98,7</td>
+                    <td>36</td>
+                    <td>8</td>
+                    <td>19</td>
+                    <td>10-15</td>
+                    <td>0,80</td>
+                </tr>
+                <tr>
+                    <td>TTBPP M12х114</td>
+                    <td>1,00</td>
+                    <td>M12</td>
+                    <td>144</td>
+                    <td>36</td>
+                    <td>40</td>
+                    <td>18</td>
+                    <td>68</td>
+                    <td>98,7</td>
+                    <td>36</td>
+                    <td>8</td>
+                    <td>19</td>
+                    <td>10-15</td>
+                    <td>0,80</td>
+                </tr>
+                <tr>
+                    <td>TTBPP M12х114</td>
+                    <td>1,00</td>
+                    <td>M12</td>
+                    <td>144</td>
+                    <td>36</td>
+                    <td>40</td>
+                    <td>18</td>
+                    <td>68</td>
+                    <td>98,7</td>
+                    <td>36</td>
+                    <td>8</td>
+                    <td>19</td>
+                    <td>10-15</td>
+                    <td>0,80</td>
+                </tr>
+                <tr>
+                    <td>TTBPP M12х114</td>
+                    <td>1,00</td>
+                    <td>M12</td>
+                    <td>144</td>
+                    <td>36</td>
+                    <td>40</td>
+                    <td>18</td>
+                    <td>68</td>
+                    <td>98,7</td>
+                    <td>36</td>
+                    <td>8</td>
+                    <td>19</td>
+                    <td>10-15</td>
+                    <td>0,80</td>
+                </tr>
+                <tr>
+                    <td>TTBPP M12х114</td>
+                    <td>1,00</td>
+                    <td>M12</td>
+                    <td>144</td>
+                    <td>36</td>
+                    <td>40</td>
+                    <td>18</td>
+                    <td>68</td>
+                    <td>98,7</td>
+                    <td>36</td>
+                    <td>8</td>
+                    <td>19</td>
+                    <td>10-15</td>
+                    <td>0,80</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <button onclick="toggleTableSpec()"
+                class="table-button" type="button">Смотреть больше
+        </button>
+    </section>
+    <section class="section-lift-specification">
+        <img src="assets/image/application-bg.jpg" alt="lift-specification-bg">
+        <div class="section-lift-specification-content container">
+            <h2>Спецификация подъема изделий</h2>
+            <div class="table-active-bar">
+                <ul>
+                    <li class="active">1 опорная точка</li>
+                    <li>2 опорные точки</li>
+                    <li>3-4 опорные точки</li>
+                </ul>
+                <table class="table-lift active">
+                    <tbody>
+                    <tr>
+                        <th>Схема</th>
+                        <th></th>
+                        <th>
+                            <svg width="103" height="96" viewBox="0 0 103 96" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <rect x="13" y="39" width="77.0593" height="46.08" rx="7" fill="white"/>
+                                <path d="M53.7949 72.1922C52.2178 72.1922 50.8198 71.954 49.6007 71.4777C48.3902 71.0014 47.3673 70.3345 46.5318 69.4772C45.7049 68.6198 45.0741 67.6065 44.6394 66.4374C44.2131 65.2682 44 63.9908 44 62.6052C44 60.7259 44.3794 59.0631 45.1381 57.6168C45.8968 56.1705 46.9794 55.0404 48.386 54.2263C49.7926 53.4036 51.4719 52.9922 53.4241 52.9922C54.0634 52.9922 54.6857 53.0355 55.291 53.1221C55.8963 53.2 56.4674 53.3126 57.0045 53.4598C57.5501 53.5984 58.053 53.7543 58.5133 53.9275C58.9822 54.0921 59.3871 54.2653 59.7281 54.4471L59.4468 57.8377C58.7393 57.4306 58.0488 57.1015 57.3753 56.8504C56.7104 56.5906 56.0667 56.4044 55.4444 56.2918C54.8307 56.1705 54.2467 56.1099 53.6926 56.1099C52.8316 56.1099 52.0346 56.2528 51.3014 56.5386C50.5768 56.8157 49.9417 57.2358 49.3962 57.7987C48.8591 58.3529 48.4414 59.0371 48.143 59.8512C47.8447 60.6566 47.6955 61.5789 47.6955 62.6182C47.6955 63.5362 47.8233 64.3979 48.0791 65.2033C48.3348 66 48.7227 66.7015 49.2427 67.3077C49.7627 67.914 50.4276 68.3903 51.2375 68.7367C52.0473 69.0745 52.9978 69.2433 54.089 69.2433C54.6005 69.2433 55.0949 69.2217 55.5723 69.1784C56.0497 69.1264 56.5143 69.0442 56.9661 68.9316C57.4179 68.819 57.8612 68.6804 58.296 68.5159C58.7307 68.3427 59.1655 68.1348 59.6002 67.8923L60.0222 71.1659C59.7324 71.2958 59.3616 71.4214 58.9097 71.5427C58.4665 71.6639 57.9678 71.7765 57.4137 71.8804C56.8595 71.9757 56.2756 72.0493 55.6618 72.1013C55.048 72.1619 54.4257 72.1922 53.7949 72.1922ZM56.6592 71.2309C56.6592 70.2869 56.6592 69.4598 56.6592 68.7497C56.6592 68.0309 56.6592 67.3121 56.6592 66.5933C56.6592 65.7532 56.6592 65.0128 56.6592 64.3719C56.6592 63.7224 56.6592 63.0642 56.6592 62.3973H60.0222C60.0222 63.0642 60.0222 63.7224 60.0222 64.3719C60.0222 65.0128 60.0222 65.7532 60.0222 66.5933C60.0222 67.3121 60.0222 68.0266 60.0222 68.7367C60.0222 69.4382 60.0222 70.2479 60.0222 71.1659L56.6592 71.2309Z"
+                                      fill="black"/>
+                                <circle cx="52" cy="32" r="5" fill="white"/>
+                                <path d="M52 12L46.2265 22L57.7735 22L52 12ZM53 41L53 21L51 21L51 41L53 41Z"
+                                      fill="white"/>
+                            </svg>
+                        </th>
+                        <th>
+                            <svg width="123" height="96" viewBox="0 0 123 96" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <rect x="14.5" y="39" width="77.0593" height="46.08" rx="7" fill="white"/>
+                                <path d="M55.2949 72.1922C53.7178 72.1922 52.3198 71.954 51.1007 71.4777C49.8902 71.0014 48.8673 70.3345 48.0318 69.4772C47.2049 68.6198 46.5741 67.6065 46.1394 66.4374C45.7131 65.2682 45.5 63.9908 45.5 62.6052C45.5 60.7259 45.8794 59.0631 46.6381 57.6168C47.3968 56.1705 48.4794 55.0404 49.886 54.2263C51.2926 53.4036 52.9719 52.9922 54.9241 52.9922C55.5634 52.9922 56.1857 53.0355 56.791 53.1221C57.3963 53.2 57.9674 53.3126 58.5045 53.4598C59.0501 53.5984 59.553 53.7543 60.0133 53.9275C60.4822 54.0921 60.8871 54.2653 61.2281 54.4471L60.9468 57.8377C60.2393 57.4306 59.5488 57.1015 58.8753 56.8504C58.2104 56.5906 57.5667 56.4044 56.9444 56.2918C56.3307 56.1705 55.7467 56.1099 55.1926 56.1099C54.3316 56.1099 53.5346 56.2528 52.8014 56.5386C52.0768 56.8157 51.4417 57.2358 50.8962 57.7987C50.3591 58.3529 49.9414 59.0371 49.643 59.8512C49.3447 60.6566 49.1955 61.5789 49.1955 62.6182C49.1955 63.5362 49.3233 64.3979 49.5791 65.2033C49.8348 66 50.2227 66.7015 50.7427 67.3077C51.2627 67.914 51.9276 68.3903 52.7375 68.7367C53.5473 69.0745 54.4978 69.2433 55.589 69.2433C56.1005 69.2433 56.5949 69.2217 57.0723 69.1784C57.5497 69.1264 58.0143 69.0442 58.4661 68.9316C58.9179 68.819 59.3612 68.6804 59.796 68.5159C60.2307 68.3427 60.6655 68.1348 61.1002 67.8923L61.5222 71.1659C61.2324 71.2958 60.8616 71.4214 60.4097 71.5427C59.9665 71.6639 59.4678 71.7765 58.9137 71.8804C58.3595 71.9757 57.7756 72.0493 57.1618 72.1013C56.548 72.1619 55.9257 72.1922 55.2949 72.1922ZM58.1592 71.2309C58.1592 70.2869 58.1592 69.4598 58.1592 68.7497C58.1592 68.0309 58.1592 67.3121 58.1592 66.5933C58.1592 65.7532 58.1592 65.0128 58.1592 64.3719C58.1592 63.7224 58.1592 63.0642 58.1592 62.3973H61.5222C61.5222 63.0642 61.5222 63.7224 61.5222 64.3719C61.5222 65.0128 61.5222 65.7532 61.5222 66.5933C61.5222 67.3121 61.5222 68.0266 61.5222 68.7367C61.5222 69.4382 61.5222 70.2479 61.5222 71.1659L58.1592 71.2309Z"
+                                      fill="black"/>
+                                <circle cx="97" cy="63" r="5" transform="rotate(90 97 63)" fill="white"/>
+                                <path d="M107 39L101.226 49L112.774 49L107 39ZM107 63L107 64L108 64L108 63L107 63ZM91 64L107 64L107 62L91 62L91 64ZM108 63L108 48L106 48L106 63L108 63Z"
+                                      fill="white"/>
+                            </svg>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Направление</th>
+                        <th></th>
+                        <th>0°</th>
+                        <th>90°</th>
+                    </tr>
+                    <tr>
+                        <th>Код издения</th>
+                        <th>Резьба</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td>TTBPP M8</td>
+                        <td>M8</td>
+                        <td>10-15</td>
+                        <td>10-15</td>
+                    </tr>
+                    <tr>
+                        <td>TTBPP M8</td>
+                        <td>M8</td>
+                        <td>10-15</td>
+                        <td>10-15</td>
+                    </tr>
+                    <tr>
+                        <td>TTBPP M8</td>
+                        <td>M8</td>
+                        <td>10-15</td>
+                        <td>10-15</td>
+                    </tr>
+                    <tr>
+                        <td>TTBPP M8</td>
+                        <td>M8</td>
+                        <td>10-15</td>
+                        <td>10-15</td>
+                    </tr>
+                    <tr>
+                        <td>TTBPP M8</td>
+                        <td>M8</td>
+                        <td>10-15</td>
+                        <td>10-15</td>
+                    </tr>
+                    <tr>
+                        <td>TTBPP M8</td>
+                        <td>M8</td>
+                        <td>10-15</td>
+                        <td>10-15</td>
+                    </tr>
+                    <tr>
+                        <td>TTBPP M8</td>
+                        <td>M8</td>
+                        <td>10-15</td>
+                        <td>10-15</td>
+                    </tr>
+                    <tr>
+                        <td>TTBPP M8</td>
+                        <td>M8</td>
+                        <td>10-15</td>
+                        <td>10-15</td>
+                    </tr>
+                    <tr>
+                        <td>TTBPP M8</td>
+                        <td>M8</td>
+                        <td>10-15</td>
+                        <td>10-15</td>
+                    </tr>
+                    <tr>
+                        <td>TTBPP M8</td>
+                        <td>M8</td>
+                        <td>10-15</td>
+                        <td>10-15</td>
+                    </tr>
+                    <tr>
+                        <td>TTBPP M8</td>
+                        <td>M8</td>
+                        <td>10-15</td>
+                        <td>10-15</td>
+                    </tr>
+                    <tr>
+                        <td>TTBPP M8</td>
+                        <td>M8</td>
+                        <td>10-15</td>
+                        <td>10-15</td>
+                    </tr>
+                    <tr>
+                        <td>TTBPP M8</td>
+                        <td>M8</td>
+                        <td>10-15</td>
+                        <td>10-15</td>
+                    </tr>
+                    <tr>
+                        <td>TTBPP M8</td>
+                        <td>M8</td>
+                        <td>10-15</td>
+                        <td>10-15</td>
+                    </tr>
+                    <tr>
+                        <td>TTBPP M8</td>
+                        <td>M8</td>
+                        <td>10-15</td>
+                        <td>10-15</td>
+                    </tr>
+                    <tr>
+                        <td>TTBPP M8</td>
+                        <td>M8</td>
+                        <td>10-15</td>
+                        <td>10-15</td>
+                    </tr>
+                    <tr>
+                        <td>TTBPP M8</td>
+                        <td>M8</td>
+                        <td>10-15</td>
+                        <td>10-15</td>
+                    </tr>
+                    <tr>
+                        <td>TTBPP M8</td>
+                        <td>M8</td>
+                        <td>10-15</td>
+                        <td>10-15</td>
+                    </tr>
+                    <tr>
+                        <td>TTBPP M8</td>
+                        <td>M8</td>
+                        <td>10-15</td>
+                        <td>10-15</td>
+                    </tr>
+                    <tr>
+                        <td>TTBPP M8</td>
+                        <td>M8</td>
+                        <td>10-15</td>
+                        <td>10-15</td>
+                    </tr>
+                    <tr>
+                        <td>TTBPP M8</td>
+                        <td>M8</td>
+                        <td>10-15</td>
+                        <td>10-15</td>
+                    </tr>
+                    <tr>
+                        <td>TTBPP M8</td>
+                        <td>M8</td>
+                        <td>10-15</td>
+                        <td>10-15</td>
+                    </tr>
+                    <tr>
+                        <td>TTBPP M8</td>
+                        <td>M8</td>
+                        <td>10-15</td>
+                        <td>10-15</td>
+                    </tr>
+                    <tr>
+                        <td>TTBPP M8</td>
+                        <td>M8</td>
+                        <td>10-15</td>
+                        <td>10-15</td>
+                    </tr>
+                    <tr>
+                        <td>TTBPP M8</td>
+                        <td>M8</td>
+                        <td>10-15</td>
+                        <td>10-15</td>
+                    </tr>
+                    <tr>
+                        <td>TTBPP M8</td>
+                        <td>M8</td>
+                        <td>10-15</td>
+                        <td>10-15</td>
+                    </tr>
+                    <tr>
+                        <td>TTBPP M8</td>
+                        <td>M8</td>
+                        <td>10-15</td>
+                        <td>10-15</td>
+                    </tr>
+                    <tr>
+                        <td>TTBPP M8</td>
+                        <td>M8</td>
+                        <td>10-15</td>
+                        <td>10-15</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <table class="table-lift">
+                <tbody>
+                <tr>
+                    <th>Вторая таблица</th>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                </tbody>
+                </table>
+                <table class="table-lift">
+                <tbody>
+                <tr>
+                    <th>Третья таблица</th>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                </tbody>
+                </table>
+            </div>
+            <button onclick="toggleTableLift()"
+                    class="table-lift-button" type="button">Смотреть больше
+            </button>
+        </div>
+    </section>
+    <section class="section-helpful">
+        <div class="helpful-content container">
+            <h2>полезная информация</h2>
+            <div class="helpful-content-cards">
+                <a>
+                    <p>скачать <br> прайс</p>
+                    <img src="assets/image/temperature-conditions-bg.jpg" alt="">
+                </a>
+                <a>
+                    <p>техническое <br> описание</p>
+                    <img src="assets/image/application-bg.jpg" alt="">
+                </a>
+                <a>
+                    <p>руководство по <br> эксплуатации </p>
+                    <img src="assets/image/card-item-3.jpg" alt="">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="container">
+            <div class="footer-blocks">
+                <div class="footer-block">
+                    <img src="assets/image/footer-logo.png" alt="footer-logo">
+                    <div class="footer-menu">
+                        <ul>
+                            <li><a href="#">Продукция</a></li>
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Фотогалерея</a></li>
+                            <li><a href="#">Где купить</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-contacts">
+                        <a class="youtube" href="#">
+                            <svg width="44" height="44" viewBox="0 0 44 44" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_515_586)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M0 22C0 9.84948 9.84948 0 22 0C34.1505 0 44 9.84948 44 22C44 34.1505 34.1505 44 22 44C9.84948 44 0 34.1505 0 22ZM33.4596 31.6539C34.7241 31.315 35.715 30.3209 36.0539 29.0596C36.6667 26.7716 36.6667 22 36.6667 22C36.6667 22 36.6667 17.2284 36.0539 14.9404C35.715 13.6759 34.7209 12.685 33.4596 12.3461C31.1716 11.7333 22 11.7333 22 11.7333C22 11.7333 12.8284 11.7333 10.5404 12.3461C9.27585 12.685 8.28504 13.6791 7.94607 14.9404C7.33333 17.2284 7.33333 22 7.33333 22C7.33333 22 7.33333 26.7716 7.94607 29.0596C8.28504 30.3241 9.27911 31.315 10.5404 31.6539C12.8284 32.2667 22 32.2667 22 32.2667C22 32.2667 31.1716 32.2667 33.4596 31.6539ZM26.687 22L19.0668 26.4V17.6L26.687 22Z"
+                                          fill="#707070"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_515_586">
+                                        <rect width="44" height="44" fill="white"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                        <a class="instagram" href="#">
+                            <svg width="44" height="44" viewBox="0 0 44 44" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_515_587)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M44 22C44 34.1503 34.1503 44 22 44C9.84974 44 0 34.1503 0 22C0 9.84974 9.84974 0 22 0C34.1503 0 44 9.84974 44 22ZM27.5963 10.726C26.1361 10.6576 25.6994 10.6445 22.0001 10.6445C18.3041 10.6445 17.8641 10.6608 16.404 10.726C15.0546 10.7879 14.3213 11.0128 13.8324 11.2019C13.1838 11.4528 12.7243 11.7527 12.2386 12.2383C11.753 12.7239 11.4531 13.1868 11.2022 13.8321C11.0131 14.321 10.7883 15.0543 10.7263 16.4037C10.6579 17.8638 10.6448 18.3038 10.6448 21.9998C10.6448 25.6958 10.6611 26.1358 10.7263 27.5959C10.7883 28.9453 11.0131 29.6786 11.2022 30.1675C11.4531 30.8161 11.753 31.2757 12.2386 31.7613C12.7243 32.2469 13.1871 32.5468 13.8324 32.7977C14.3213 32.9868 15.0546 33.2117 16.404 33.2736C17.8641 33.342 18.3008 33.3551 22.0001 33.3551C25.6994 33.3551 26.1361 33.3388 27.5963 33.2736C28.9456 33.2117 29.6789 32.9868 30.1678 32.7977C30.8164 32.5468 31.276 32.2469 31.7616 31.7613C32.2472 31.2757 32.5471 30.8128 32.798 30.1675C32.9871 29.6786 33.212 28.9453 33.2739 27.5959C33.3423 26.1358 33.3554 25.6958 33.3554 21.9998C33.3554 18.3038 33.3391 17.8638 33.2739 16.4037C33.212 15.0543 32.9871 14.321 32.798 13.8321C32.5471 13.1835 32.2472 12.7239 31.7616 12.2383C31.276 11.7527 30.8131 11.4528 30.1678 11.2019C29.6789 11.0128 28.9456 10.7879 27.5963 10.726ZM16.2899 8.23269C17.7663 8.16425 18.2389 8.14795 22.0001 8.14795C25.7613 8.14795 26.2339 8.16425 27.7103 8.23269C29.1868 8.30113 30.1939 8.5358 31.0739 8.87802C31.9865 9.23002 32.7589 9.70588 33.5281 10.4751C34.2973 11.2475 34.7699 12.0199 35.1251 12.9293C35.4706 13.8125 35.702 14.8197 35.7705 16.2928C35.8389 17.7693 35.8552 18.2419 35.8552 22.0031C35.8552 25.7642 35.8389 26.2368 35.7705 27.7133C35.702 29.1897 35.4674 30.1968 35.1251 31.0768C34.7731 31.9894 34.2973 32.7619 33.5281 33.5311C32.7557 34.3002 31.9832 34.7728 31.0739 35.1281C30.1906 35.4736 29.1835 35.705 27.7103 35.7734C26.2339 35.8419 25.7613 35.8582 22.0001 35.8582C18.2389 35.8582 17.7663 35.8419 16.2899 35.7734C14.8134 35.705 13.8063 35.4703 12.9263 35.1281C12.0137 34.7761 11.2413 34.3002 10.4721 33.5311C9.70292 32.7586 9.23033 31.9862 8.87507 31.0768C8.52959 30.1936 8.29818 29.1865 8.22974 27.7133C8.16129 26.2368 8.14499 25.7642 8.14499 22.0031C8.14499 18.2419 8.16129 17.7693 8.22974 16.2928C8.29818 14.8164 8.53285 13.8093 8.87507 12.9293C9.22707 12.0167 9.70292 11.2442 10.4721 10.4751C11.2446 9.70588 12.017 9.23328 12.9263 8.87802C13.8096 8.53254 14.8167 8.30113 16.2899 8.23269ZM14.8884 22.0004C14.8884 18.073 18.0727 14.8887 22.0001 14.8887C25.9275 14.8887 29.1118 18.073 29.1118 22.0004C29.1118 25.9278 25.9275 29.1121 22.0001 29.1121C18.0727 29.1121 14.8884 25.9278 14.8884 22.0004ZM17.3817 22.0004C17.3817 24.5524 19.4514 26.6187 22.0001 26.6187C24.5521 26.6187 26.6185 24.5524 26.6185 22.0004C26.6185 19.4484 24.5521 17.382 22.0001 17.382C19.4481 17.382 17.3817 19.4484 17.3817 22.0004ZM29.3953 16.2666C30.3133 16.2666 31.0576 15.5224 31.0576 14.6044C31.0576 13.6864 30.3133 12.9422 29.3953 12.9422C28.4773 12.9422 27.7331 13.6864 27.7331 14.6044C27.7331 15.5224 28.4773 16.2666 29.3953 16.2666Z"
+                                          fill="#707070"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_515_587">
+                                        <rect width="44" height="44" fill="white"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                        <a class="telegram" href="#">
+                            <svg width="44" height="44" viewBox="0 0 44 44" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_515_595)">
+                                    <path d="M22 0C9.84948 0 0 9.84948 0 22C0 34.1505 9.84948 44 22 44C34.1505 44 44 34.1505 44 22C44 9.84948 34.1505 0 22 0ZM32.7262 13.992C32.6024 16.0127 28.8542 31.0933 28.8542 31.0933C28.8542 31.0933 28.6293 31.9766 27.8276 32.0059C27.5342 32.0157 27.179 31.957 26.7553 31.592C25.9079 30.8652 23.949 29.4735 22.1271 28.2154C21.5763 28.6782 20.4779 29.6299 19.3404 30.7641C17.7304 32.3742 17.9357 30.7641 17.9357 30.7641L18.4311 25.507L18.4441 25.5135C18.467 25.4613 18.5028 25.4157 18.5028 25.4157C18.5028 25.4157 27.9905 16.9807 28.2415 16.0975C28.261 16.029 28.1861 15.9964 28.0883 16.0258C27.4593 16.2572 16.5342 23.157 15.3283 23.9164C15.2566 23.9621 15.061 23.9327 15.061 23.9327L9.76148 22.2053C9.76148 22.2053 9.12918 21.9479 9.33126 21.3644C9.37363 21.2439 9.45837 21.1428 9.70933 20.9668C10.8827 20.1487 31.4453 12.7567 31.4453 12.7567C31.4453 12.7567 32.0255 12.5612 32.3677 12.6916C32.5241 12.7502 32.6252 12.8187 32.7099 13.0631C32.7393 13.1511 32.7588 13.3434 32.7556 13.5324C32.7556 13.6693 32.736 13.7932 32.7262 13.992Z"
+                                          fill="#707070"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_515_595">
+                                        <rect width="44" height="44" fill="white"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-block-bottom">
+                    <a href="#">Политика конфиденциальности</a>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
 <script src="js/jquery-3.7.1.min.js"></script>
 <script src="js/splide.min.js"></script>
 <script src="js/index.js"></script>
 <script>
     document.addEventListener('DOMContentLoaded', function () {
-        new Splide('.appointment-splide', {
+        new Splide('#splide1', {
             type: 'loop',
             gap: 'var(--spacing-md)',
-            arrows: {
-                prev: '<button class="splide__arrow splide__arrow--prev my-prev-arrow">Предыдущий</button>',
-                next: '<button class="splide__arrow splide__arrow--next my-next-arrow">Следующий</button>'
-            },
-            pagination: {
-                render: function (data, current) {
-                    return '<ul class="splide__pagination my-pagination container">' + data.map(function (item, index) {
-                        return '<li class="' + (index === current ? 'is-active' : '') + '"><button>' + (index + 1) + '</button></li>';
-                    }).join('') + '</ul>';
+            arrows: true,
+            pagination: true,
+            autoWidth: false,
+            focus: function(index) {
+                if (window.matchMedia('(max-width: 768px)').matches) {
+                    return 'left'; // or 'right' depending on your preference
+                } else {
+                    return 'center';
                 }
             },
+            trimSpace: true,
+            padding: {
+                left: 'var(--spacing-md)',
+                right: 'var(--spacing-md)'
+            }
+        }).mount();
+
+        new Splide('#splide2', {
+            type: 'loop',
+            gap: 'var(--spacing-md)',
+            arrows: true,
+            pagination: true,
             autoWidth: false,
             focus: 'center',
             trimSpace: true,
@@ -186,6 +1117,83 @@
             }
         }).mount();
     });
+
+    const lis = document.querySelectorAll('.active-bar ul li');
+    const hints = document.querySelectorAll('.active-bar .hint');
+
+    lis.forEach((li, index) => {
+        li.addEventListener('click', () => {
+
+            lis.forEach((otherLi) => {
+                otherLi.classList.remove('active');
+            });
+            hints.forEach((hint) => {
+                hint.classList.remove('active');
+            });
+
+            li.classList.add('active');
+            hints[index].classList.add('active');
+        });
+    });
+
+    const liftLis = document.querySelectorAll('.table-active-bar ul li');
+    const tableLift = document.querySelectorAll('.table-active-bar .table-lift');
+
+    liftLis.forEach((li, index) => {
+        li.addEventListener('click', () => {
+
+            liftLis.forEach((otherLi) => {
+                otherLi.classList.remove('active');
+            });
+            tableLift.forEach((hint) => {
+                hint.classList.remove('active');
+            });
+
+            li.classList.add('active');
+            tableLift[index].classList.add('active');
+        });
+    });
+
+    const toggleTableSpec = () => {
+        const content = document.querySelector('.specifications-grid')
+        const button = document.querySelector('.table-button')
+
+        content.classList.toggle('open-table')
+        button.classList.toggle('open-table')
+        if (button.classList.contains('open-table')) {
+            button.innerHTML = 'Скрыть'
+        } else button.innerHTML = "Смотреть больше"
+    }
+
+    const toggleTableLift = () => {
+        const content = document.querySelector('.table-active-bar')
+        const button = document.querySelector('.table-lift-button')
+
+        content.classList.toggle('open-table')
+        button.classList.toggle('open-table')
+        if (button.classList.contains('open-table')) {
+            button.innerHTML = 'Скрыть'
+        } else button.innerHTML = "Смотреть больше"
+    }
+
+    const openModalSingle = () => {
+        const burgerMenu = document.querySelector('.burger-menu');
+        const modal = document.querySelector('.modal');
+        if (modal.classList.contains('show')) {
+            modal.classList.remove('show');
+            burgerMenu.classList.remove('active')
+        } else {
+            modal.classList.add('show');
+            burgerMenu.classList.add('active')
+        }
+    }
+
+    addEventListener('DOMContentLoaded', function () {
+        const header = document.querySelector('.header')
+        const title = document.querySelector('.title-mainscreen')
+        header.style.transform = "translateY(0)"
+        title.style.transform = "translateY(0) scale(1)"
+    })
 </script>
 </body>
 </html>

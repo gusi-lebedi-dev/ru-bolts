@@ -11,10 +11,27 @@ const elements = [
     document.querySelector('.to-buy-image'),
     document.querySelector('.contact-title'),
     document.querySelector('.contacts-content-item'),
-]
+    document.querySelector('.appointment'),
+    document.querySelector('.section-use'),
+    document.querySelector('.section-characteristics'),
+    document.querySelector('.section-temperature-conditions'),
+    document.querySelector('.section-product-specification'),
+    document.querySelector('.section-lift-specification-content'),
+    document.querySelector('.section-helpful'),
 
-document.querySelectorAll('.product-image').forEach(element => elements.push(element))
-document.querySelectorAll('.advantages-item-image').forEach(element => elements.push(element))
+].filter(element => element !== null && element !== undefined);
+
+document.querySelectorAll('.product-image').forEach(element => {
+    if (element !== null && element !== undefined) {
+        elements.push(element);
+    }
+});
+
+document.querySelectorAll('.advantages-item-image').forEach(element => {
+    if (element !== null && element !== undefined) {
+        elements.push(element);
+    }
+});
 
 const options = {
     root: null,
@@ -46,4 +63,6 @@ const openModal = () => {
         burgerMenu.classList.add('active')
     }
 }
+
+
 
