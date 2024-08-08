@@ -181,6 +181,7 @@ h2 {
 .to-buy,
 .products {
     padding: 100px 0;
+    overflow: hidden;
 }
 
 .products h2 {
@@ -610,7 +611,6 @@ h3 {
 
 .about-us {
     position: relative;
-    min-height: 1100px;
 }
 
 .about-us-title {
@@ -829,6 +829,14 @@ h3 {
         font-size: 16px;
     }
 
+    .products .sub-title {
+        margin-bottom: 30px;
+    }
+
+    .products-item img {
+        height: 218px;
+    }
+
     .products-item a {
         font-size: 16px;
     }
@@ -934,9 +942,16 @@ h3 {
         margin-bottom: 50px;
     }
 
+    .footer {
+        padding-top: 30px;
+        padding-bottom: 24px;
+
+    }
+
     .footer-menu ul {
         flex-direction: column;
         gap: 10px;
+        align-items: center;
     }
 
     .footer-menu ul a {
@@ -946,6 +961,11 @@ h3 {
 
     .about-us h2 {
         margin-bottom: 30px;
+    }
+
+    .footer-block-bottom {
+        align-items: center;
+        justify-content: center;
     }
 
     .about-us-blocks {
@@ -1055,12 +1075,14 @@ h3 {
 }
 
 .appointment-text {
-    transition: transform 0.5s;
+    transition: transform 0.5s, opacity 0.6s;
     transform: translateY(-50%);
+    opacity: 0;
 }
 
 .appointment.active .appointment-text {
     transform: translateY(0);
+    opacity: 1;
 }
 
 .appointment-splide {
@@ -1591,6 +1613,8 @@ table.iksweb td {
 }
 
 @media screen and (max-width: 1076px) {
+
+
     .single-product h2,
     .single-product .main-screen h1 {
         font-size: 32px;
@@ -1632,7 +1656,7 @@ table.iksweb td {
 
     .active-bar ul {
         padding: 0 20px;
-        gap: 30px;
+        gap: 20px;
         max-width: 965px;
         display: flex;
         flex-wrap: nowrap;
@@ -1669,6 +1693,7 @@ table.iksweb td {
     .table-lift,
     .specifications-grid {
         overflow-x: auto;
+        overflow-y: hidden;
         -webkit-overflow-scrolling: touch;
     }
 
@@ -1683,6 +1708,15 @@ table.iksweb td {
 }
 
 @media screen and (max-width: 768px) {
+
+    .to-buy-image {
+        display: none;
+    }
+
+    .to-buy h2 {
+        margin-bottom: 40px;
+    }
+
     .single-product h2,
     .single-product .main-screen h1 {
         font-size: 28px;
@@ -1697,5 +1731,48 @@ table.iksweb td {
 
     .section-characteristics .splide__slide {
         align-items: start;
+    }
+
+    .helpful-content-cards a {
+        gap: 30px;
+        min-height: 360px;
+    }
+
+
+    .single-product .section-use,
+    .single-product .main-screen {
+        height: 100%;
+        padding-bottom: 120px;
+    }
+
+    .section-temperature-conditions {
+        height: auto;
+        padding-bottom: 0;
+    }
+
+    .appointment-text {
+        padding-bottom: 20px;
+    }
+    .section-temperature-conditions-content {
+        gap: 50px;
+    }
+
+    .active-bar {
+        gap: 40px;
+    }
+
+    .section-characteristics .splide__slide {
+        height: auto;
+        padding-bottom: 40px;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0) 79.98%);
+    }
+    .section-product-specification {
+        padding-top: 40px;
+    }
+    .section-product-specification h2 {
+        margin-bottom: 30px;
+    }
+    .specifications-grid {
+        max-height: 500px;
     }
 }
