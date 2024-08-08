@@ -6,7 +6,7 @@ const observer = new IntersectionObserver((entries) => {
         }
     });
 }, {
-    root: document.body,
+    root: null,
     rootMargin: "0px",
     threshold: 0.1,
 });
