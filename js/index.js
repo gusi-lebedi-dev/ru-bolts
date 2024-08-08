@@ -24,3 +24,7 @@ const openModal = () => {
         burgerMenu.classList.add('active')
     }
 }
+
+
+addEventListener('touchstart', openModal)
+addEventListener('click', openModal)
