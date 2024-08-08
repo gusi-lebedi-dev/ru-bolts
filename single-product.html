@@ -17,7 +17,7 @@
     </section>
     <section class="header">
         <div class="container">
-            <a href="/ru-bolts"><img src="assets/image/logo.png" alt="logo"></a>
+            <a href="index.html"><img src="assets/image/logo.png" alt="logo"></a>
             <div class="nav-menu">
                 <ul>
                     <li><a href="single-product.html">TTBSPP</a></li>
@@ -28,11 +28,11 @@
                     <li><a href="index.html#contacts">Контакты</a></li>
                 </ul>
             </div>
-            <div onclick="openModalSingle()" class="burger-menu">
+            <button type="button" onclick="openModal()" class="burger-menu">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </button>
         </div>
     </section>
     <div class="modal">
@@ -1165,17 +1165,6 @@
         } else button.innerHTML = "Смотреть больше"
     }
 
-    const openModalSingle = () => {
-        const burgerMenu = document.querySelector('.burger-menu');
-        const modal = document.querySelector('.modal');
-        if (modal.classList.contains('show')) {
-            modal.classList.remove('show');
-            burgerMenu.classList.remove('active')
-        } else {
-            modal.classList.add('show');
-            burgerMenu.classList.add('active')
-        }
-    }
 
     addEventListener('DOMContentLoaded', function () {
         const header = document.querySelector('.header')
