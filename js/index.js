@@ -25,6 +25,3 @@ const openModal = () => {
     }
 }
 
-
-addEventListener('touchstart', openModal)
-addEventListener('click', openModal)
