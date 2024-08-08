@@ -1848,33 +1848,33 @@ table.iksweb td {
         max-height: 500px;
     }
 
-    [data-animate],
-    [data-animate] .about-us-title,
-    [data-animate] .about-us-block-left,
-    [data-animate] .about-us-block-right,
-    [data-animate] .contact-title,
-    [data-animate] .contacts-content-item,
-    [data-animate] .appointment-text,
-    [data-animate] .appointment-splide,
-    [data-animate] .appointment-splide .control,
-    [data-animate] .section-use-content,
-    [data-animate] .section-temperature-conditions-content,
-    [data-animate] .section-temperature-conditions-content .active-bar,
-    [data-animate] h2,
-    [data-animate] .table-button,
-    [data-animate] .specifications-grid,
-    [data-animate] .table-active-bar,
-    [data-animate] .table-lift-button,
-    [data-animate] .helpful-content-cards {
-        transform: translateY(0) scale(1) translateX(0) !important;
-        opacity: 1 !important;
-    }
+    /*[data-animate],*/
+    /*[data-animate] .about-us-title,*/
+    /*[data-animate] .about-us-block-left,*/
+    /*[data-animate] .about-us-block-right,*/
+    /*[data-animate] .contact-title,*/
+    /*[data-animate] .contacts-content-item,*/
+    /*[data-animate] .appointment-text,*/
+    /*[data-animate] .appointment-splide,*/
+    /*[data-animate] .appointment-splide .control,*/
+    /*[data-animate] .section-use-content,*/
+    /*[data-animate] .section-temperature-conditions-content,*/
+    /*[data-animate] .section-temperature-conditions-content .active-bar,*/
+    /*[data-animate] h2,*/
+    /*[data-animate] .table-button,*/
+    /*[data-animate] .specifications-grid,*/
+    /*[data-animate] .table-active-bar,*/
+    /*[data-animate] .table-lift-button,*/
+    /*[data-animate] .helpful-content-cards {*/
+    /*    transform: translateY(0) scale(1) translateX(0) !important;*/
+    /*    opacity: 1 !important;*/
+    /*}*/
 
-    .single-product .header {
-        transform: translateY(0);
-    }
+    /*.single-product .header {*/
+    /*    transform: translateY(0);*/
+    /*}*/
 
-    .main-screen h1 {
-        transform: translateY(0) scale(1);
-    }
+    /*.main-screen h1 {*/
+    /*    transform: translateY(0) scale(1);*/
+    /*}*/
 }
