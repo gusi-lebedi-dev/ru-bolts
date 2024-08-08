@@ -1089,13 +1089,7 @@
             arrows: true,
             pagination: true,
             autoWidth: false,
-            focus: function(index) {
-                if (window.matchMedia('(max-width: 768px)').matches) {
-                    return 'left'; // or 'right' depending on your preference
-                } else {
-                    return 'center';
-                }
-            },
+            focus: 'center',
             trimSpace: true,
             padding: {
                 left: 'var(--spacing-md)',
