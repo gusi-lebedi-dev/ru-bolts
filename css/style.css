@@ -666,8 +666,8 @@ h3 {
     opacity: 0;
 }
 
-.contacts-content-item.active,
-.contact-title.active,
+.contacts.active .contacts-content-item,
+.contacts.active .contact-title,
 .to-buy-title.active,
 .advantages-title.active {
     transform: translateY(0%);
@@ -1570,6 +1570,7 @@ table.iksweb td {
 
 .section-lift-specification-content h2 {
     transform: translateY(-200%);
+    opacity: 0;
 }
 
 .table-active-bar {
@@ -1578,6 +1579,7 @@ table.iksweb td {
 
 .section-lift-specification-content.active h2 {
     transform: translateY(0);
+    opacity: 1;
 }
 
 .section-lift-specification-content.active .table-active-bar {
@@ -1738,11 +1740,20 @@ table.iksweb td {
         min-height: 360px;
     }
 
+    .main-screen {
+        height: 100%;
+        padding-bottom: 286px;
+    }
 
     .single-product .section-use,
     .single-product .main-screen {
         height: 100%;
-        padding-bottom: 120px;
+        padding-top: 120px;
+        padding-bottom: 70px;
+    }
+
+    .single-product .section-use {
+        padding-top: 0;
     }
 
     .section-temperature-conditions {
@@ -1753,6 +1764,7 @@ table.iksweb td {
     .appointment-text {
         padding-bottom: 20px;
     }
+
     .section-temperature-conditions-content {
         gap: 50px;
     }
@@ -1766,12 +1778,15 @@ table.iksweb td {
         padding-bottom: 40px;
         background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0) 79.98%);
     }
+
     .section-product-specification {
         padding-top: 40px;
     }
+
     .section-product-specification h2 {
         margin-bottom: 30px;
     }
+
     .specifications-grid {
         max-height: 500px;
     }
