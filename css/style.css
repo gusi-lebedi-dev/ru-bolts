@@ -139,7 +139,8 @@ legend {
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 2;
+    height: 100px;
+    z-index: 3;
 }
 
 .header .container {
@@ -702,7 +703,7 @@ h3 {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
-    z-index: 1;
+    z-index: 2;
 }
 
 .modal-content {
@@ -795,6 +796,7 @@ h3 {
     }
 
     .burger-menu {
+        position: relative;
         display: flex;
     }
 }
