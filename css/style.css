@@ -109,12 +109,10 @@ legend {
     max-width: 100%;
     width: 100%;
     height: 100vh;
-    background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 81.5%);;
 }
 
 .section-lift-specification {
     position: relative;
-    background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 81.5%);;
 }
 
 .section-lift-specification img,
