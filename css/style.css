@@ -844,6 +844,7 @@ h3 {
     .footer-menu ul {
         flex-direction: column;
         gap: 10px;
+        align-items: center;
     }
 }
 
