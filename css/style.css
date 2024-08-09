@@ -1239,6 +1239,11 @@ h3 {
     flex-basis: 50%;
 }
 
+.section-temperature-conditions h2 {
+    transition: transform .5s;
+    transform: translateY(-100%);
+}
+
 .section-temperature-conditions.active .active-bar,
 .section-temperature-conditions.active h2 {
     transform: translateY(0);
@@ -1526,6 +1531,7 @@ table.iksweb td {
 }
 
 .table-lift {
+    position: relative;
     margin: 0 auto;
     width: 100%;
     border-collapse: collapse;
@@ -1533,6 +1539,7 @@ table.iksweb td {
     height: auto;
     color: white;
     text-align: center;
+    backdrop-filter: blur(10px);
 }
 
 .table-lift, .table-lift td, .table-lift th {
@@ -1545,18 +1552,22 @@ table.iksweb td {
 }
 
 .table-lift th {
+    position: relative;
     background: rgba(104, 103, 72, 0.5);
     color: #fff;
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
+    z-index: 1;
 }
 
 .table-lift td {
+    position: relative;
     background: rgba(0, 0, 0, 0.6);
     color: #fff;
     font-size: 20px;
     line-height: 24px;
+    backdrop-filter: blur(10px);
 }
 
 .table-lift td:first-child,
