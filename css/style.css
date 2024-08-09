@@ -858,7 +858,14 @@ h3 {
         display: flex;
     }
 }
-
+.header .logo {
+    width: 198px;
+    height: 64px;
+}
+.footer .logo {
+    width: 220px;
+    height: 71px;
+}
 @media screen and (max-width: 950px) {
     .products-block {
         flex-direction: column;
